@@ -32,7 +32,15 @@ tags={
 }
 
 resource"aws_instance" "my_first_instance"{
-  ami = var.ami
+  ami = var.ami_id
+  key_name = var.key_name
+  instance_type = var.instance_type
+  security_groups= [var.security_grp]
+  tags={
+    Name=var.tag_name
+    }
+  }
+
   
 
 
