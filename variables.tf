@@ -30,7 +30,7 @@ variable "acl"{
   }
 variable "tags"{
   type=map
-  default{
+  default={
     environment="DEV"
     terraform="true"
   }
