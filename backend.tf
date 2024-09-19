@@ -1,4 +1,4 @@
-terrafrom{
+terraform{
 backend "s3" {
   bucket = "mysarabuck"
   key = "main"
